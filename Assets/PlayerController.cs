@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// 【プレイヤーのコントロール用クラス】
+///		・入力
+///		・ジャンプ
+///		・アニメーション
+///		・地面との当たり判定
+///		・敵との当たり判定
+/// </summary>
 public class PlayerController : MonoBehaviour {
 
 	private float moveSpeed = 6.0f;
@@ -19,12 +27,19 @@ public class PlayerController : MonoBehaviour {
 	private bool isGround;
 	private bool isDead;
 
+	/// <summary>
+	/// 初期化
+	/// </summary>
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 	}
 	
+	/// <summary>
+	/// 物理演算が必要ない更新処理
+	/// </summary>
 	void Update () {
+		// 入力関連
 		inputHrz = Input.GetAxis("Horizontal");
 		//inputVtc = Input.GetAxis("Vertical");
 
@@ -33,21 +48,23 @@ public class PlayerController : MonoBehaviour {
 		} else if (Input.GetButtonDown("Jump") && !isGround) {
 			isDash = true;
 			
-
 		} else if (Input.GetButtonUp("Jump") && !isGround) {
 			isDash = false;
 		}
 
-
+		// アニメーション
 		SetAnimator();
 
 
-		// test
+		// デバック用コマンド【リロード】
 		if (Input.GetKeyDown(KeyCode.Q)) {
 			SceneManager.LoadScene(0);
 		}
 	}
 
+	/// <summary>
+	/// Animatorに渡すフラグ
+	/// </summary>
 	void SetAnimator() {
 		anim.SetFloat("VelocityX", Mathf.Abs(rb.velocity.x));
 		anim.SetFloat("VelocityY", rb.velocity.y);
@@ -56,37 +73,61 @@ public class PlayerController : MonoBehaviour {
 		anim.SetBool("isDead", isDead);
 	}
 
+	/// <summary>
+	/// 物理演算を行う更新処理
+	/// </summary>
 	void FixedUpdate() {
-		//rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+		
+		// 移動（キー入力で移動させているが、後々オートランにする…予定）
 		rb.velocity = new Vector2(inputHrz * moveSpeed, rb.velocity.y);
+		//rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+
+		// ジャンプ
 		if (isJumping) {
 			isJumping = false;
 			isGround = false;
 			rb.velocity = new Vector2(rb.velocity.x, 0f);
 			rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
 		}
+
+		// 空中ダッシュ
 		if (isDash) {
 			isJumping = false;
 			isGround = false;
 			anim.SetTrigger("isDash");
 			rb.velocity = new Vector2(rb.velocity.x, 0f);
 			rb.AddForce(new Vector3(0.2f, 0.2f, 0) * jumpPower, ForceMode2D.Impulse);
-			//rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
 		}
 	}
 
+	/// <summary>
+	/// トリガー突入判定
+	/// </summary>
+	/// <param name="col"></param>
 	void OnTriggerEnter2D(Collider2D col) {
+		// 接地判定
 		if (col.gameObject.CompareTag("Ground")) {
 			isGround = true;
 		}
 
 	}
-	//void OnTriggerExit2D(Collider2D col) {
-	//	if (col.gameObject.CompareTag("Ground")) {
-	//	}
-	//}
 
+	/// <summary>
+	/// トリガー離脱判定
+	/// </summary>
+	/// <param name="col"></param>
+	void OnTriggerExit2D(Collider2D col) {
+		//if (col.gameObject.CompareTag("Ground")) {
+		//}
+	}
+
+
+	/// <summary>
+	/// 当たり判定
+	/// </summary>
+	/// <param name="col"></param>
 	void OnCollisionEnter2D(Collision2D col) {
+		// エネミーTagに当たると固まって死ぬ
 		if (col.gameObject.CompareTag("Enemy")) {
 			rb.simulated = false;
 			isDead = true;

@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 【背景グループのコントロール用クラス】
+///		・プレイヤーの動きに対してゆっくりスクロールする
+///		・
+/// </summary>
 public class BackGroundGroupController : MonoBehaviour {
 
 	private Transform playerTfm;
