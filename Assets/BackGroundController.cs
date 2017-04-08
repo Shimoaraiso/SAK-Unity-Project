@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 【背景のコントロール用クラス】
+///		・背景は3枚、カメラから見切れたら回り込む
+/// </summary>
 public class BackGroundController : MonoBehaviour {
 	
 	// 背景の枚数

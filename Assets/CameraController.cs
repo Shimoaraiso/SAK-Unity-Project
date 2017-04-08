@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 【カメラのコントロール用クラス】
+///		・プレイヤーの座標と同期
+/// </summary>
 public class CameraController : MonoBehaviour {
 
 	private Transform playerTfm;
