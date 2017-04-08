@@ -12,12 +12,13 @@ public class CameraController : MonoBehaviour {
 	private Transform myTfm;
 	private Vector3 playerPos;
 	private Vector3 myPos;
+	private float offsetX = 4.0f;
 
 	void Start () {
 		playerTfm = GameObject.FindWithTag("Player").transform;
 		playerPos = playerTfm.position;
 		myTfm = transform;
-
+		myTfm.position = new Vector3(playerPos.x + offsetX, myTfm.position.y, myTfm.position.z);
 	}
 
 	void Update () {

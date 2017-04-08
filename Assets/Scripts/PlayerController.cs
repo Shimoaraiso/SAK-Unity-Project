@@ -13,6 +13,10 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class PlayerController : MonoBehaviour {
 
+	// 開発用変数
+	public bool autoRun;
+	//
+
 	private float moveSpeed = 6.0f;
 	private float jumpPower = 12.0f;
 
@@ -77,11 +81,14 @@ public class PlayerController : MonoBehaviour {
 	/// 物理演算を行う更新処理
 	/// </summary>
 	void FixedUpdate() {
-		
-		// 移動（キー入力で移動させているが、後々オートランにする…予定）
-		rb.velocity = new Vector2(inputHrz * moveSpeed, rb.velocity.y);
-		//rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
 
+		// 移動（キー入力で移動させているが、後々オートランにする…予定）
+		if (autoRun) {
+			rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+		} else {
+			rb.velocity = new Vector2(inputHrz * moveSpeed, rb.velocity.y);
+			//rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+		}
 		// ジャンプ
 		if (isJumping) {
 			isJumping = false;
