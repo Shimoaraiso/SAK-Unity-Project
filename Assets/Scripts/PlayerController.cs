@@ -116,6 +116,11 @@ public class PlayerController : MonoBehaviour {
 		if (col.gameObject.CompareTag("Ground")) {
 			isGround = true;
 		}
+		
+		if (col.gameObject.name == "CameraSwitch") {
+			Debug.Log("aaaa");
+		}
+
 
 	}
 

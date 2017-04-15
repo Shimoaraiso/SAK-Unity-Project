@@ -23,8 +23,7 @@ public class CameraController : MonoBehaviour {
 
 	void Update () {
 		myTfm.position += Vector3.right * (playerTfm.position.x - playerPos.x);
-
+		myTfm.position += Vector3.up * (playerTfm.position.y - playerPos.y);
 		playerPos = playerTfm.position;
-
 	}
 }
