@@ -31,9 +31,9 @@ public class BackGroundGroupController : MonoBehaviour {
 		myTfm.position += Vector3.right * myPosX;
 
 		float myPosy = (playerTfm.position.y - playerPos.y );
-
 		myTfm.position += Vector3.up * myPosy;
 
+		playerPos = playerTfm.position;
 		
 
 		//Vector3 playerViewport = Camera.main.WorldToViewportPoint(playerTfm.position);
@@ -47,6 +47,6 @@ public class BackGroundGroupController : MonoBehaviour {
 
 
 
-		playerPos = playerTfm.position;
 	}
+
 }
