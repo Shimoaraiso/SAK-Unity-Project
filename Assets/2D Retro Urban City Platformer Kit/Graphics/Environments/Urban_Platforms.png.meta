@@ -1,13 +1,21 @@
 fileFormatVersion: 2
 guid: aaeb8548c9de0384a9e8892d90db8ec8
 TextureImporter:
-  fileIDToRecycleName: {}
-  serializedVersion: 2
+  fileIDToRecycleName:
+    21300000: Urban_Platforms_0
+    21300002: Urban_Platforms_1
+    21300004: Urban_Platforms_2
+    21300006: Urban_Platforms_3
+    21300008: Urban_Platforms_4
+    21300010: Urban_Platforms_5
+    21300012: Urban_Platforms_6
+    21300014: Urban_Platforms_7
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
@@ -15,14 +23,12 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 1024
@@ -33,22 +39,36 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Urban_Platforms_0
+    - serializedVersion: 2
+      name: Urban_Platforms_0
       rect:
         serializedVersion: 2
         x: 33
@@ -56,9 +76,12 @@ TextureImporter:
         width: 322
         height: 293
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Urban_Platforms_1
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Urban_Platforms_1
       rect:
         serializedVersion: 2
         x: 663
@@ -66,9 +89,12 @@ TextureImporter:
         width: 317
         height: 293
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Urban_Platforms_2
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Urban_Platforms_2
       rect:
         serializedVersion: 2
         x: 16
@@ -76,9 +102,12 @@ TextureImporter:
         width: 319
         height: 293
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Urban_Platforms_3
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Urban_Platforms_3
       rect:
         serializedVersion: 2
         x: 353
@@ -86,9 +115,12 @@ TextureImporter:
         width: 313
         height: 293
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Urban_Platforms_4
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Urban_Platforms_4
       rect:
         serializedVersion: 2
         x: 690
@@ -96,9 +128,12 @@ TextureImporter:
         width: 315
         height: 293
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Urban_Platforms_5
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Urban_Platforms_5
       rect:
         serializedVersion: 2
         x: 11
@@ -106,9 +141,12 @@ TextureImporter:
         width: 322
         height: 200
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Urban_Platforms_6
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Urban_Platforms_6
       rect:
         serializedVersion: 2
         x: 348
@@ -116,9 +154,12 @@ TextureImporter:
         width: 324
         height: 200
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Urban_Platforms_7
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Urban_Platforms_7
       rect:
         serializedVersion: 2
         x: 688
@@ -126,8 +167,11 @@ TextureImporter:
         width: 319
         height: 200
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -1,13 +1,28 @@
 fileFormatVersion: 2
 guid: f5c98848f638c5c45a06698f39399c46
 TextureImporter:
-  fileIDToRecycleName: {}
-  serializedVersion: 2
+  fileIDToRecycleName:
+    21300000: WarpBeam_spriteSheet_0
+    21300002: WarpBeam_spriteSheet_1
+    21300004: WarpBeam_spriteSheet_2
+    21300006: WarpBeam_spriteSheet_3
+    21300008: WarpBeam_spriteSheet_4
+    21300010: WarpBeam_spriteSheet_5
+    21300012: WarpBeam_spriteSheet_6
+    21300014: WarpBeam_spriteSheet_7
+    21300016: WarpBeam_spriteSheet_8
+    21300018: WarpBeam_spriteSheet_9
+    21300020: WarpBeam_spriteSheet_10
+    21300022: WarpBeam_spriteSheet_11
+    21300024: WarpBeam_spriteSheet_12
+    21300026: WarpBeam_spriteSheet_13
+    21300028: WarpBeam_spriteSheet_14
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
@@ -15,14 +30,12 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
@@ -33,22 +46,36 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: WarpBeam_spriteSheet_0
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -58,7 +85,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_1
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_1
       rect:
         serializedVersion: 2
         x: 204
@@ -68,7 +98,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_2
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_2
       rect:
         serializedVersion: 2
         x: 408
@@ -78,7 +111,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_3
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_3
       rect:
         serializedVersion: 2
         x: 612
@@ -88,7 +124,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_4
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_4
       rect:
         serializedVersion: 2
         x: 816
@@ -98,7 +137,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_5
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_5
       rect:
         serializedVersion: 2
         x: 0
@@ -108,7 +150,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_6
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_6
       rect:
         serializedVersion: 2
         x: 204
@@ -118,7 +163,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_7
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_7
       rect:
         serializedVersion: 2
         x: 408
@@ -128,7 +176,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_8
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_8
       rect:
         serializedVersion: 2
         x: 612
@@ -138,7 +189,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_9
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_9
       rect:
         serializedVersion: 2
         x: 816
@@ -148,7 +202,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_10
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_10
       rect:
         serializedVersion: 2
         x: 0
@@ -158,7 +215,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_11
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_11
       rect:
         serializedVersion: 2
         x: 204
@@ -168,7 +228,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_12
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_12
       rect:
         serializedVersion: 2
         x: 408
@@ -178,7 +241,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_13
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_13
       rect:
         serializedVersion: 2
         x: 612
@@ -188,7 +254,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WarpBeam_spriteSheet_14
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WarpBeam_spriteSheet_14
       rect:
         serializedVersion: 2
         x: 816
@@ -198,6 +267,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
